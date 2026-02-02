@@ -1,7 +1,7 @@
 # Overview
-As a penetration tester, I assessed the application’s client-side handling of browser cookies to determine whether user-controlled data could be abused to trigger DOM-based vulnerabilities. During testing, I identified that a cookie storing the last viewed product was populated using untrusted input and later inserted into the DOM without sanitization. By poisoning this cookie with a crafted payload, I was able to achieve arbitrary JavaScript execution in the victim’s browser. This project demonstrates how unsafe client-side trust in cookie values can lead to high-impact DOM-based XSS.
+I assessed the application’s client-side handling of browser cookies to determine whether user-controlled data could be abused to trigger DOM-based vulnerabilities. During testing, I identified that a cookie storing the last viewed product was populated using untrusted input and later inserted into the DOM without sanitization. By poisoning this cookie with a crafted payload, I was able to achieve arbitrary JavaScript execution in the victim’s browser. This project demonstrates how unsafe client-side trust in cookie values can lead to high-impact DOM-based XSS.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Reviewed application behaviour to understand how product navigation updates client-side cookies.
 
